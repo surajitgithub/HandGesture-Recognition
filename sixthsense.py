@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import math
-#import os
+import os
 
 frame_counter = 0
 handCenterPositions_x = [0,0,0,0,0,0,0,0,0,0]
@@ -173,28 +173,28 @@ while(video_input.isOpened()):
         cv2.putText(img,'1', (10, 500), cv2.FONT_HERSHEY_SIMPLEX,3,2)
         if (previous_defects != cd):
             print cd
-            #os.system("say 'one'")
+            os.system("say 'one'")
     elif (cd== 2):
         cv2.putText(img, "2", (10, 500), cv2.FONT_HERSHEY_SIMPLEX, 3, 2)
         #click_photo(topmost, leftmost, c1, c2)
         if (previous_defects != cd):
             print cd
-            #os.system("say 'two'")
+            os.system("say 'two'")
     elif (cd == 3):
         cv2.putText(img, "3", (10, 500), cv2.FONT_HERSHEY_SIMPLEX, 3, 2)
         if (previous_defects != cd):
             print cd
-            #os.system("say 'three'")
+            os.system("say 'three'")
     elif (cd == 4):
         cv2.putText(img, "4", (10, 500), cv2.FONT_HERSHEY_SIMPLEX, 3, 2)
         if (previous_defects != cd):
             print cd
-            #os.system("say 'four'")
+            os.system("say 'four'")
     elif (cd == 5):
         cv2.putText(img, "5", (10, 500), cv2.FONT_HERSHEY_SIMPLEX, 3, 2)
         if (previous_defects != cd):
             print cd
-            #os.system("say 'five'")
+            os.system("say 'five'")
     else :
         cv2.putText(img, "other gesture...", (100, 500), cv2.FONT_HERSHEY_SIMPLEX, 3, 2)
         eraser_x.append(300 - topmost[0])
